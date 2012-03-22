@@ -1,4 +1,4 @@
-﻿namespace McDonald
+﻿namespace McDonaldConsulting
 {
     using System.Collections.Generic;
 

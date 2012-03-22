@@ -8,8 +8,8 @@
     <ProjectGuid>{505ED16A-E5D5-4694-8BEC-EA043C0102AF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>McDonald</RootNamespace>
-    <AssemblyName>McDonald.Utility</AssemblyName>
+    <RootNamespace>McDonaldConsulting</RootNamespace>
+    <AssemblyName>McDonaldConsulting.Utility</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
