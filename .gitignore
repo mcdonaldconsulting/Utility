@@ -1,0 +1,24 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.[Oo]bj
+*.user
+*.vspscc
+*.vssscc
+*.suo
+*.tlb
+*.bak
+*.[Cc]ache
+*.log
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+
+#Subversion files
+.svn
+
+#NuGet
+packages/
