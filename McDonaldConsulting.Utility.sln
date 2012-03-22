@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McDonald.Utility", "McDonald.Utility\McDonald.Utility.csproj", "{505ED16A-E5D5-4694-8BEC-EA043C0102AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McDonaldConsulting.Utility", "McDonaldConsulting.Utility\McDonaldConsulting.Utility.csproj", "{505ED16A-E5D5-4694-8BEC-EA043C0102AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FAEA4F41-441C-4DBF-9278-5A43A3816FBC}"
 	ProjectSection(SolutionItems) = preProject
