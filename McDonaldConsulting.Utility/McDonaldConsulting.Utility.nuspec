@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
-    <copyright>Copyright McDonald Consulting 2012</copyright>
+    <copyright>Copyright © McDonald Consulting 2012</copyright>
     <tags></tags>
   </metadata>
 </package>
