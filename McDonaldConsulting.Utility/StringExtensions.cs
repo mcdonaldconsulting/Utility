@@ -28,5 +28,15 @@
         {
             return string.Join(separator, values);
         }
+
+        public static string Join(this string[] values, string separator)
+        {
+            return string.Join(separator, values);
+        }
+
+        public static string Join(this object[] values, string separator)
+        {
+            return string.Join(separator, values);
+        }
     }
 }
