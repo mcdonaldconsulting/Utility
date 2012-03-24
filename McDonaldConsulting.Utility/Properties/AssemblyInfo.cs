@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("McDonaldConsulting.Utility")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Basic .NET 4.0 Extension Methods")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("McDonald Consulting")]
 [assembly: AssemblyProduct("McDonaldConsulting.Utility")]
