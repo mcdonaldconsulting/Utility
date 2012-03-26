@@ -38,5 +38,15 @@
         {
             return string.Join(separator, values);
         }
+
+        public static string FormatWith(this string format, object arg0)
+        {
+            return string.Format(format, arg0);
+        }
+
+        public static string FormatWith(this string format, object arg0, object arg1)
+        {
+            return string.Format(format, arg0, arg1);
+        }
     }
 }
