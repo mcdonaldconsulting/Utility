@@ -1,4 +1,4 @@
-﻿namespace McDonaldConsulting.NetflixBrowser.Helpers
+﻿namespace McDonaldConsulting
 {
     using System;
     using System.Collections;
