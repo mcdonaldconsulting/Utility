@@ -16,6 +16,7 @@ obj/
 [Bb]in
 [Dd]ebug*/
 [Rr]elease*/
+TestResults/
 
 #Subversion files
 .svn
