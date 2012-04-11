@@ -1,0 +1,3 @@
+To install McDonaldConsulting.Utility, run the following command in the Package Manager Console
+
+PM> Install-Package McDonaldConsulting.Utility
