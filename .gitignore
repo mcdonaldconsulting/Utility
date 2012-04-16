@@ -24,3 +24,11 @@ TestResults/
 #NuGet
 packages/
 *.nupkg
+
+SolutionVersion.cs
+NDepend.xml
+
+code_drop
+build_output
+
+*.ncrunchsolution
