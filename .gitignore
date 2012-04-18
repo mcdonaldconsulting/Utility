@@ -25,10 +25,12 @@ TestResults/
 packages/
 *.nupkg
 
-SolutionVersion.cs
-NDepend.xml
+*.ncrunchsolution
+*.ncrunchproject
 
 code_drop
 build_output
 
-*.ncrunchsolution
+SolutionVersion.cs
+NDepend.xml
+lib/MoMA/Reports/submit.xml
