@@ -32,3 +32,4 @@ code_drop
 build_output
 
 *.ncrunchsolution
+*.ncrunchproject
