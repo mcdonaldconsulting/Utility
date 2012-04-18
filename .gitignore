@@ -25,6 +25,9 @@ TestResults/
 packages/
 *.nupkg
 
+#Git merge originals
+*.orig
+
 *.ncrunchsolution
 *.ncrunchproject
 
