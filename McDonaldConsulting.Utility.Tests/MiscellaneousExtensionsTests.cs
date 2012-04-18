@@ -1,12 +1,10 @@
 ﻿namespace McDonaldConsulting.Utility.Tests
 {
     using System;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Xunit;
 
-    [TestClass]
     public class MiscellaneousExtensionsTests
     {
-        [TestClass]
         public class IsBetweenMethodForInt32
         {
             private const int Below = 1;
@@ -15,38 +13,37 @@
             private const int Upper = 4;
             private const int Above = 5;
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenBelowReturnsFalse()
             {
-                Assert.IsFalse(Below.IsBetween(Lower, Upper));
+                Assert.False(Below.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenLowerBoundReturnsTrue()
             {
-                Assert.IsTrue(Lower.IsBetween(Lower, Upper));
+                Assert.True(Lower.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenInsideReturnsTrue()
             {
-                Assert.IsTrue(Inside.IsBetween(Lower, Upper));
+                Assert.True(Inside.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenUpperBoundReturnsTrue()
             {
-                Assert.IsTrue(Upper.IsBetween(Lower, Upper));
+                Assert.True(Upper.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenAboveReturnsFalse()
             {
-                Assert.IsFalse(Above.IsBetween(Lower, Upper));
+                Assert.False(Above.IsBetween(Lower, Upper));
             }
         }
 
-        [TestClass]
         public class IsBetweenMethodForDecimal
         {
             private const decimal Below = 0.999999m;
@@ -55,38 +52,37 @@
             private const decimal Upper = 2.0m;
             private const decimal Above = 2.000001m;
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenBelowReturnsFalse()
             {
-                Assert.IsFalse(Below.IsBetween(Lower, Upper));
+                Assert.False(Below.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenLowerBoundReturnsTrue()
             {
-                Assert.IsTrue(Lower.IsBetween(Lower, Upper));
+                Assert.True(Lower.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenInsideReturnsTrue()
             {
-                Assert.IsTrue(Inside.IsBetween(Lower, Upper));
+                Assert.True(Inside.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenUpperBoundReturnsTrue()
             {
-                Assert.IsTrue(Upper.IsBetween(Lower, Upper));
+                Assert.True(Upper.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenAboveReturnsFalse()
             {
-                Assert.IsFalse(Above.IsBetween(Lower, Upper));
+                Assert.False(Above.IsBetween(Lower, Upper));
             }
         }
 
-        [TestClass]
         public class IsBetweenMethodForDateTime
         {
             private static readonly DateTime Lower = new DateTime(2010, 6, 30);
@@ -95,34 +91,34 @@
             private static readonly DateTime Inside = Lower.AddHours(12);
             private static readonly DateTime Above = Upper.AddTicks(1);
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenBelowReturnsFalse()
             {
-                Assert.IsFalse(Below.IsBetween(Lower, Upper));
+                Assert.False(Below.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenLowerBoundReturnsTrue()
             {
-                Assert.IsTrue(Lower.IsBetween(Lower, Upper));
+                Assert.True(Lower.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenInsideReturnsTrue()
             {
-                Assert.IsTrue(Inside.IsBetween(Lower, Upper));
+                Assert.True(Inside.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenUpperBoundReturnsTrue()
             {
-                Assert.IsTrue(Upper.IsBetween(Lower, Upper));
+                Assert.True(Upper.IsBetween(Lower, Upper));
             }
 
-            [TestMethod]
+            [Fact]
             public void IsBetweenAboveReturnsFalse()
             {
-                Assert.IsFalse(Above.IsBetween(Lower, Upper));
+                Assert.False(Above.IsBetween(Lower, Upper));
             }
         }
     }

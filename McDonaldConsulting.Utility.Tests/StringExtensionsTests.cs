@@ -1,9 +1,8 @@
 ﻿namespace McDonaldConsulting.Utility.Tests
 {
     using System.Collections.Generic;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Xunit;
 
-    [TestClass]
     public class StringExtensionsTests
     {
         private const string NullString = null;
@@ -11,43 +10,43 @@
         private const string WhitespaceString = " \t \r \n ";
         private const string McDonald = "McDonald";
 
-        [TestMethod]
+        [Fact]
         public void IsNullOrEmpty()
         {
-            Assert.IsTrue(NullString.IsNullOrEmpty());
-            Assert.IsTrue(emptyString.IsNullOrEmpty());
-            Assert.IsFalse(WhitespaceString.IsNullOrEmpty());
-            Assert.IsFalse(McDonald.IsNullOrEmpty());
+            Assert.True(NullString.IsNullOrEmpty());
+            Assert.True(emptyString.IsNullOrEmpty());
+            Assert.False(WhitespaceString.IsNullOrEmpty());
+            Assert.False(McDonald.IsNullOrEmpty());
         }
 
-        [TestMethod]
+        [Fact]
         public void IsNotNullOrEmpty()
         {
-            Assert.IsFalse(NullString.IsNotNullOrEmpty());
-            Assert.IsFalse(emptyString.IsNotNullOrEmpty());
-            Assert.IsTrue(WhitespaceString.IsNotNullOrEmpty());
-            Assert.IsTrue(McDonald.IsNotNullOrEmpty());
+            Assert.False(NullString.IsNotNullOrEmpty());
+            Assert.False(emptyString.IsNotNullOrEmpty());
+            Assert.True(WhitespaceString.IsNotNullOrEmpty());
+            Assert.True(McDonald.IsNotNullOrEmpty());
         }
 
-        [TestMethod]
+        [Fact]
         public void IsNullOrWhiteSpace()
         {
-            Assert.IsTrue(NullString.IsNullOrWhiteSpace());
-            Assert.IsTrue(emptyString.IsNullOrWhiteSpace());
-            Assert.IsTrue(WhitespaceString.IsNullOrWhiteSpace());
-            Assert.IsFalse(McDonald.IsNullOrWhiteSpace());
+            Assert.True(NullString.IsNullOrWhiteSpace());
+            Assert.True(emptyString.IsNullOrWhiteSpace());
+            Assert.True(WhitespaceString.IsNullOrWhiteSpace());
+            Assert.False(McDonald.IsNullOrWhiteSpace());
         }
 
-        [TestMethod]
+        [Fact]
         public void IsNotNullOrWhiteSpace()
         {
-            Assert.IsFalse(NullString.IsNotNullOrWhiteSpace());
-            Assert.IsFalse(emptyString.IsNotNullOrWhiteSpace());
-            Assert.IsFalse(WhitespaceString.IsNotNullOrWhiteSpace());
-            Assert.IsTrue(McDonald.IsNotNullOrWhiteSpace());
+            Assert.False(NullString.IsNotNullOrWhiteSpace());
+            Assert.False(emptyString.IsNotNullOrWhiteSpace());
+            Assert.False(WhitespaceString.IsNotNullOrWhiteSpace());
+            Assert.True(McDonald.IsNotNullOrWhiteSpace());
         }
 
-        [TestMethod]
+        [Fact]
         public void Join()
         {
             // Arrange
@@ -56,16 +55,16 @@
             var enumerable = new List<string> { "a", "b", "c" };
 
             // Act & Assert
-            Assert.AreEqual("1,2,3", objects.Join(","));
-            Assert.AreEqual("a+b+c", strings.Join("+"));
-            Assert.AreEqual("a;b;c", enumerable.Join(";"));
+            Assert.Equal("1,2,3", objects.Join(","));
+            Assert.Equal("a+b+c", strings.Join("+"));
+            Assert.Equal("a;b;c", enumerable.Join(";"));
         }
 
-        [TestMethod]
+        [Fact]
         public void FormatWith()
         {
-            Assert.AreEqual("1: a", "1: {0}".FormatWith("a"));
-            Assert.AreEqual("2: a b", "2: {0} {1}".FormatWith("a", "b"));
+            Assert.Equal("1: a", "1: {0}".FormatWith("a"));
+            Assert.Equal("2: a b", "2: {0} {1}".FormatWith("a", "b"));
         }
     }
 }
