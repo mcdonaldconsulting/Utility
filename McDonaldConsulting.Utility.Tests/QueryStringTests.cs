@@ -1,19 +1,18 @@
 ﻿namespace McDonaldConsulting.Utility.Tests
 {
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Xunit;
 
-    [TestClass]
     public class QueryStringTests
     {
-        [TestMethod]
+        [Fact]
         public void Indexer()
         {
             var queryString = new QueryString();
             queryString["a"] = "b";
-            Assert.AreEqual("b", queryString["a"]);
+            Assert.Equal("b", queryString["a"]);
         }
 
-        [TestMethod]
+        [Fact]
         public void Enumerator()
         {
             var queryString = new QueryString();
@@ -23,22 +22,22 @@
             var enumerator = queryString.GetEnumerator();
             enumerator.MoveNext();
             dynamic item1 = enumerator.Current;
-            Assert.AreEqual("a", item1.Key);
-            Assert.AreEqual("b", item1.Value);
+            Assert.Equal("a", item1.Key);
+            Assert.Equal("b", item1.Value);
             enumerator.MoveNext();
             dynamic item2 = enumerator.Current;
-            Assert.AreEqual("c", item2.Key);
-            Assert.AreEqual("d", item2.Value);
+            Assert.Equal("c", item2.Key);
+            Assert.Equal("d", item2.Value);
         }
 
-        [TestMethod]
-        public void MyTestMethod()
+        [Fact]
+        public void MyFact()
         {
             var queryString = new QueryString();
 
             queryString.Add("q", "mcdonald");
 
-            Assert.AreEqual("q=mcdonald", queryString.ToString());
+            Assert.Equal("q=mcdonald", queryString.ToString());
         }
     }
 }
