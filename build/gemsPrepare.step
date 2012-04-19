@@ -96,7 +96,7 @@
   
   <target name="copy_notices_to_doc_folder">
     <echo level="Warning" message="Packaging readme file to ${dirs.drop.gems}${path.separator}docs."/>
-    <copy file="${dirs.current}README.markdown" tofile="${dirs.drop.gems}${path.separator}docs${path.separator}README" failonerror="false" />
+    <copy file="${dirs.current}${path.separator}README.markdown" tofile="${dirs.drop.gems}${path.separator}docs${path.separator}README" failonerror="false" />
     
     <echo level="Warning" message="Packaging other legal stuff to ${dirs.drop.gems}${path.separator}docs."/>
     <copy todir="${dirs.drop.gems}${path.separator}docs" failonerror="false">
