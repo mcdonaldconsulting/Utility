@@ -28,12 +28,15 @@ packages/
 #Git merge originals
 *.orig
 
-*.ncrunchsolution
-*.ncrunchproject
+#NCrunch
+*.ncrunch*
 
+#UppercuT
 code_drop
 build_output
-
 SolutionVersion.cs
 NDepend.xml
 lib/MoMA/Reports/submit.xml
+
+#Custom Ignore Files
+*.hide
