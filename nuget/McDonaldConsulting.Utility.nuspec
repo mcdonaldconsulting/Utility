@@ -3,12 +3,12 @@
   <metadata>
     <id>McDonaldConsulting.Utility</id>
     <version>DO_NOT_EDIT</version>
-    <authors>McDonald Consulting</authors>
+    <authors>paddymcdonald</authors>
     <owners>paddymcdonald</owners>
-    <summary>NuGet Summary</summary>
-    <description>Nuget Description</description>
-    <!--<projectUrl>__REPLACE__</projectUrl>
-    <licenseUrl>__REPLACE__</licenseUrl>
+    <summary>McDonaldConsulting.Utility</summary>
+    <description>McDonaldConsulting.Utility is a library of extension methods and helper classes for .NET 4.0</description>
+    <projectUrl>https://github.com/McDonald-Consulting/Utility</projectUrl>
+    <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>space delimited</tags>
     <iconUrl>32x32.png</iconUrl>
