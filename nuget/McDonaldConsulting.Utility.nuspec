@@ -15,5 +15,6 @@
     <dependencies>
       <dependency id="something" version="1.0.0.0" />
     </dependencies>-->
+    <copyright>Copyright © McDonald Consulting 2012</copyright>
   </metadata>
 </package>
